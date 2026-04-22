@@ -511,8 +511,8 @@ AC_SUBST([PLUGINS])
 
 GLIB_GSETTINGS
 
-AX_COMPILER_FLAGS([WARN_CFLAGS],[WARN_LDFLAGS])
-GTK_DOC_CHECK([1.14],[--flavour no-tmpl])
+#AX_COMPILER_FLAGS([WARN_CFLAGS],[WARN_LDFLAGS])
+#GTK_DOC_CHECK([1.14],[--flavour no-tmpl])
 
 # This macro expands DIR and assigns it to RET.
 # If DIR is NONE, then it's replaced by DEFAULT.

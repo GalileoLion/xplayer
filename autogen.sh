@@ -14,7 +14,7 @@ ACLOCAL_FLAGS="-I libgd $ACLOCAL_FLAGS"
 
 mkdir -p m4
 
-gtkdocize --copy || exit 1
+# gtkdocize --copy || exit 1
 intltoolize --force --copy --automake || exit 1
 autoreconf --verbose --force --install || exit 1
 

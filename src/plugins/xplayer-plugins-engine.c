@@ -35,7 +35,7 @@
 
 #include <glib/gi18n.h>
 #include <glib.h>
-#include <girepository.h>
+#include <girepository/girepository.h>
 #include <libpeas/peas-activatable.h>
 #include <libpeas/peas-extension-set.h>
 
@@ -106,9 +106,9 @@ xplayer_plugins_engine_get_default (XplayerObject *xplayer)
 
 	g_return_val_if_fail (xplayer != NULL, NULL);
 
-	g_irepository_require (g_irepository_get_default (), "Peas", "1.0", 0, NULL);
-	g_irepository_require (g_irepository_get_default (), "PeasGtk", "1.0", 0, NULL);
-	g_irepository_require (g_irepository_get_default (), "Xplayer", XPLAYER_API_VERSION, 0, NULL);
+	gi_repository_require (gi_repository_dup_default (), "Peas", "1.0", 0, NULL);
+	gi_repository_require (gi_repository_dup_default (), "PeasGtk", "1.0", 0, NULL);
+	gi_repository_require (gi_repository_dup_default (), "Xplayer", XPLAYER_API_VERSION, 0, NULL);
 
 	paths = xplayer_get_plugin_paths ();
 

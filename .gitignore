@@ -1,0 +1,23 @@
+# Build files
+Makefile
+Makefile.in
+aclocal.m4
+autom4te.cache/
+build-aux/
+config.h
+config.h.in
+config.h.in~
+config.log
+config.lt
+config.status
+configure
+libtool
+stamp-h1
+*.o
+*.lo
+*.la
+.libs/
+.deps/
+
+# Generated docs
+docs/reference/version.xml

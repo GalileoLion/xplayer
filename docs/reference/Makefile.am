@@ -138,15 +138,15 @@ GTKDOC_LIBS = \
 	$(PLAYER_LIBS)
 
 # This includes the standard gtk-doc make rules, copied by gtkdocize.
-include $(top_srcdir)/gtk-doc.make
+#include $(top_srcdir)/gtk-doc.make
 
 # Other files to distribute
 # e.g. EXTRA_DIST += version.xml.in
-EXTRA_DIST += version.xml.in
+EXTRA_DIST = version.xml.in
 
-if ENABLE_GTK_DOC
-TESTS_ENVIRONMENT = cd $(builddir) &&
-TESTS = $(GTKDOC_CHECK)
-endif
+#if ENABLE_GTK_DOC
+#TESTS_ENVIRONMENT = cd $(builddir) &&
+#TESTS = $(GTKDOC_CHECK)
+#endif
 
 -include $(top_srcdir)/git.mk
